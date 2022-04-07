@@ -140,19 +140,19 @@ body {
     background: linear-gradient(to right, rgb(248 209 27 / 0%), rgb(248 209 27 / 25%));
 }
 
-.text-box {
+.hero-text-box {
     color: #333458;
     padding: 0 0 0 6rem;
 }
 
-.text-box h2 {
+.hero-text-box h2 {
     margin: 0;
     font-size: 35px;
     line-height: 44px;
     font-weight: 600;
 }
 
-.text-box h2 span {
+.hero-text-box h2 span {
     color: #f8d11b;
 }
 
@@ -185,30 +185,29 @@ button {
     padding: 0 6rem;
     margin-bottom: 15px;
 }
-.section-two-header {
+.common-section-header {
     border-bottom: 1px solid #E0E0E0;
 }
 
-.exixt-header {
+.common-main-header {
     color: #2c3e50;
 }
 
-.exixt {
+.common-main-para {
     display: flex;
     margin: 0%;
 }
 
-.exixt-para {
+.common-para {
     font-size: 16px;
-    width: 75%;
 }
 
-.exixt-btn {
+.common-btn {
     margin-left: 180px;
     line-height: 80px
 }
 
-.exixt-btn-one {
+.common-main-btn {
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
@@ -219,34 +218,31 @@ button {
     display: flex;
     justify-content: center;
     align-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
     
 }
 
-.main-grid {
+.section-two-main-grid {
     display: inline-block;
     position: relative;
     justify-content: center;
-    width: 230px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 8px;
     box-sizing: border-box;
     box-shadow: 0 0 10px 0 #868585;
     margin-top: 30px;
 }
-
-.main-grid img {
+.section-two-main-grid img {
     border-radius: 8px;
-    width: 230px;
+    max-width: 100%;
 }
 
-.main-grid h3 {
+.section-two-main-grid h3 {
     font-size: 16px;
     padding-left: 10px;
 }
 
-.main-grid p {
+.section-two-main-grid p {
     font-size: 12PX;
     padding-left: 10px;
 }
@@ -254,11 +250,14 @@ button {
 @media (min-width: 1460px){
 
     /* -----section-two-grid------ */
-    .main-grid{
+    .section-two-main-grid{
         width: auto;
     }
-    .main-grid img {
-        width: auto;
+    #section-two-last-grid{
+        margin-right: 0px;
+    }
+    .section-two-main-grid img {
+        max-width: 100%;
     }
 }
 
@@ -270,6 +269,9 @@ button {
     .hero-img-main {
         padding: 0;
     }
+    /* #section-two-last-grid{
+        margin-right: 15px;
+    } */
 }
 @media (max-width: 860px){
     .logo img{
@@ -283,7 +285,7 @@ button {
         display: none;
     }
     /* -----hero-ariya-text-box------ */
-    .text-box{
+    .hero-text-box{
         padding: 1rem 2rem;
         text-align: center;
     }
@@ -294,25 +296,31 @@ button {
     .section-two{
         padding: 0px;
     }
-    .section-two-header {
-        margin: 0px 10px;
-    }
-    .exixt-header{
+    /* .common-section-header {
+        margin: 0px 5px;
+    } */
+    .common-main-header{
         text-align: center;
     }
-    .exixt-para{
+    .common-para{
         margin: 0px 25px;
     }
-    .exixt{
+    .common-main-para{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 0 auto;
     }
-    .exixt-btn{
+    .common-btn{
         margin: 0 auto;
     }
-}
+    .section-two-grid{
+        margin: 0px 5px 0px 15px;
+    }
+    /* #section-two-last-grid{
+        margin-right: 10px;
+    }
+} */
 @media (max-width: 640px){
     .logo img{
         margin-left: 5px;
@@ -323,7 +331,6 @@ button {
     .search{
         display: none;
     }
-    
     .mobile-menu{
         display: block;
         position: absolute;
@@ -335,12 +342,23 @@ button {
         padding: 5px 5px;
     }
     /* ------hero-ariya------ */
-    .text-box h2{
+    .hero-text-box h2{
         font-size: 25px;
         line-height: 35px;
     }
     /* -------grid-section---- */
-    .main-grid{
-        margin: 20px 2.5px 0px 2.5px;
+    .section-two-grid {
+        flex-wrap: wrap;
     }
+    .section-two-grid{
+        margin: auto;
+    }
+    .section-two-main-grid{
+        margin: 20px auto;
+        width: auto;
+    }
+    .section-two-main-grid img{
+        max-width: 100%;
+    }
+    
 }
